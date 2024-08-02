@@ -21,3 +21,10 @@ vim.opt.rtp:prepend(lazypath)
 require "plugins"
 
 vim.cmd "colorscheme rose-pine"
+
+vim.api.nvim_create_user_command('OpenTree', function(opts)
+    vim.cmd('cd ' .. opts.args)
+    require('nvim-tree').setup {} -- Ensure nvim-tree is set up
+    vim.cmd('NvimTreeOpen')
+end, { nargs = 1 })
+
