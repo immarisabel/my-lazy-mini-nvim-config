@@ -1,3 +1,7 @@
+This is what works for me. I left the original readme for my own refferences.
+
+BASED ON:
+
 # TinyVim
 - Minimal Neovim config meant to be a starting point for new neovim users.
 
